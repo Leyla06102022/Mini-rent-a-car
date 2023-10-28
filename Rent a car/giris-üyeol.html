@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BİZE KATIL</title>
+  <link rel="stylesheet" href="giris-üyeol.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+    <a href="#" class="logo"><img src="img/logo.png" alt=""></a>
+    <div class="bx bx-menu" id="menu-icon"></div>
+    <ul class="navbar">
+      <li><a href="index.html#home">Anasayfa</a></li>
+      <li><a href="index.html#rent">Kiralama</a></li>
+      <li><a href="index.html#cars">Arabalar</a></li>
+      <li><a href="index.html#about">Hakkımızda</a></li>
+      <li><a href="index.html#comments">Yorumlar</a></li>
+    </ul>
+  </header>
+  <div class="main active">
+    <div class="container signup">
+      <form action="#" class="form" id="form_1">
+        <h2 class="form_title">ÜYE OL</h2>
+        <input type="text" placeholder="Ad-Soyad" class="input">
+        <input type="email" placeholder="E-mail" class="input">
+        <input type="password" placeholder="Şifre" class="input">
+        <button class="btn" onclick="alert('Aramıza Hoşgeldiniz ')">ÜYE OL</button>
+      </form>
+    </div>
+    <div class="container signin">
+      <form action="#" class="form" id="form_2">
+        <h2 class="form_title">GİRİŞ YAP</h2>
+        <input type="text" placeholder="Email" class="input">
+        <input type="password" placeholder="Şifre" class="input">
+        <div class="remember">
+          <input type="checkbox" id="check">
+          <label for="check" class="checkLabel">Beni Hatırla</label>
+        </div>
+        <a href="#" class="forget">Şifremi Unuttum</a>
+        <button class="btn" onclick="alert('Sizi tekrardan görmek çok güzel ')">GİRİŞ YAP</button>
+      </form>
+    </div>
+    <div class="cover">
+      <div class="cover_sub">
+        <div class="overlay overlay_left">
+          <button class="btn" id="signIn">GİRİŞ YAP</button>
+        </div>
+        <div class="overlay overlay_right">
+          <button class="btn" id="signUp">ÜYE OL</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const signInBtn = document.querySelector("#signIn");
+    const signUpBtn = document.querySelector("#signUp");
+    const main = document.querySelector(".main");
+
+
+    signInBtn.addEventListener("click", () => {
+      main.classList.toggle("active"); 
+    })
+
+    signUpBtn.addEventListener("click", () => {
+      main.classList.toggle("active");
+    })
+  </script>
+</body>
+
+</html>
